@@ -44,21 +44,8 @@ states in the design by analyzing the timing and sequence of input changes.
 /* write all the steps invloved */
 
 **PROGRAM**Developed by:R.Mohamed Rafi;RegisterNumber:24002982
-module tflipflop( input clk, rst_n, input t,
-output reg q,
-output q_bar
-);
-always@(posedge clk)
-begin
-if(!rst_n)
-q<=0;
-else
-begin
-q<=(t?~q:q);
-end
-end
-assign q_bar = ~q;
-endmodule
+![Screenshot 2024-12-05 090736](https://github.com/user-attachments/assets/b91d9a12-5fea-4480-bd35-76a8871ea853)
+
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
 */
 
